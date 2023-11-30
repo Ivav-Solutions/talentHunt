@@ -37,15 +37,18 @@
     
 }
 
-.img-link {
-    width: 14px;
-    
-}
-
 .img-container {
     border: 1px solid white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-link {
+    max-width: 100%;
 }

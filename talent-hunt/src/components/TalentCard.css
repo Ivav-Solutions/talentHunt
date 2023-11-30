@@ -1,14 +1,3 @@
-.talentCard {
-    margin-bottom: 40px;
-    width: 270px;
-}
-
-.talentCard-thumbnail {
-    height: 170px;
-    width: 270px;
-    
-}
-
 /* .talentContainer-cards {
     display: flex;
     flex-wrap: wrap;
@@ -17,9 +6,23 @@
 } */
 
 .talentContainer-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Adjust the gap between columns */
+}
+
+.talentCard {
+    /* margin-bottom: 40px;
+    width: 270px; */
+    /* flex: 1; */
+    padding: 16px;
+    border: 1px solid #ccc;
+    margin: 8px;
+}
+
+.talentCard-thumbnail {
+    height: 170px;
+    width: 270px;
     
 }
 

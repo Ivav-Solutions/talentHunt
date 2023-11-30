@@ -1,0 +1,51 @@
+.talentCard {
+    margin-bottom: 40px;
+    width: 270px;
+}
+
+.talentCard-thumbnail {
+    height: 170px;
+    width: 270px;
+    
+}
+
+/* .talentContainer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+
+} */
+
+.talentContainer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.talentCard-info {
+    display: flex;
+    margin-top: 10px;
+    padding-right: 30px;
+    
+}
+
+.talent-avatar {
+    width: 40px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+.talent-text {
+    margin-left: 15px;
+}
+
+.talent-text > h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.talent-text > p {
+    font-size: 14px;
+    color: gray;
+}

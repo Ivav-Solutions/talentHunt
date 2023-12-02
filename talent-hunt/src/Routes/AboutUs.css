@@ -1,0 +1,31 @@
+.AboutUs {
+    padding: 4rem 1rem;
+    
+}
+
+.about-info h1 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-info h2 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.about-info p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-info {
+    width: 429px;
+    margin-top: 50px;
+    /* height: 150px; */
+}
+
+.AboutUs-container {
+    display: flex;
+    gap: 20px;
+}

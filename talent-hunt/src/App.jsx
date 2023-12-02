@@ -1,6 +1,14 @@
 import './App.css'
+import AboutUs from './Routes/AboutUs'
+import Contact from './Routes/Contact'
 import Talents from './Routes/Talents'
 import Home from './components/Home'
+import Footer from './components/Footer'
+
+
+
+
+
 
 function App() {
   return (
@@ -8,6 +16,11 @@ function App() {
       <div className="App_container">
         <Home />
         <Talents />
+        <AboutUs />
+        <Contact />
+        <Footer />
+
+        
       </div>
     </>
   )

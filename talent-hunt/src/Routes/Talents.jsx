@@ -18,19 +18,21 @@ import dj from '../assets/dj.png'
 
 
 
+
 const Talents = () => {
   return (
-    <div className="talent-container">
+    <div className="talents">
+      <div className="talent-container">
         <h1>Talents</h1>
-          <ul className="talent-link">
-            <li><Link>Discover your Best Talents</Link></li>
-            <li><Link>All Categories</Link></li>
-            <li><Link>Music</Link></li>
-            <li><Link>Disc Jockey</Link></li>
-            <li><Link>Event Planner</Link></li>
-            <li><Link><img src={search} alt="" /></Link></li>
-        </ul>
-        <div className="talentContainer-cards">
+       <ul className="talent-link">
+         <li><Link>Discover your Best Talents</Link></li>
+         <li><Link>All Categories</Link></li>
+         <li><Link>Music</Link></li>
+         <li><Link>Disc Jockey</Link></li>
+         <li><Link>Event Planner</Link></li>
+         <li><Link><img src={search} alt="" /></Link></li>
+       </ul>
+       <div className="talentContainer-cards">
           <TalentCard
           talentName="James cold"
           talentTitle="singer"
@@ -38,6 +40,7 @@ const Talents = () => {
           image={music}
           talentBtn="Book"
           />
+
           <TalentCard
           talentName="Angela Peters"
           talentTitle="Music Producer"
@@ -45,6 +48,7 @@ const Talents = () => {
           image={shoe}
           talentBtn="Book"
           />
+
           <TalentCard
           talentName="Harry Stone"
           talentTitle="Event Planner"
@@ -52,6 +56,7 @@ const Talents = () => {
           image={decorations}
           talentBtn="Book" 
           />
+
           <TalentCard
           talentName="Paul Smith"
           talentTitle="Fashion Designer"
@@ -59,6 +64,7 @@ const Talents = () => {
           image={cloth}
           talentBtn="Book" 
           />
+
           <TalentCard
           talentName="Mary Blues"
           talentTitle="chef"
@@ -66,6 +72,7 @@ const Talents = () => {
           image={chef}
           talentBtn="Book"
           />
+
           <TalentCard
           talentName="Deejay Ivav"
           talentTitle="Disc Jockey"
@@ -73,10 +80,14 @@ const Talents = () => {
           image={dj}
           talentBtn="Book"
           />
+       </div>
 
-
+        <div className="talents-link">
+          <button className="talentlink-Btn"><Link>Show me more</Link></button>
         </div>
-       
+  
+      </div>
+
     </div>
   )
 }

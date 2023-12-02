@@ -1,8 +1,17 @@
-.home-container {
+/* .home-container {
     background: #0135C7;
     width: 100%;
     height: 100%;
 
+} */
+
+.home {
+    background-color: #0135C7;
+}
+
+.home-container {
+    max-width: 1140px;
+    
 }
 
 .intro-link {
@@ -17,6 +26,7 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .intro-text {
@@ -28,12 +38,14 @@
     font-size: 64px;
     font-weight: 700;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .intro-text p {
     font-size: 24px;
     font-weight: 400;
     color: white;
+    font-family: 'Poppins', sans-serif;
     
 }
 

@@ -1,0 +1,41 @@
+.reward {
+    width: 100%;
+    padding: 6rem 1rem;
+}
+
+.reward-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin-left: 60px;
+    
+}
+
+.reward-card {
+    border: 1px solid #f3efef;
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.reward-card > h1{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reward-card > p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #5E5E5E;
+    
+}
+
+/* .reward-card {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 51%;
+    height: 80%
+     
+
+} */
+

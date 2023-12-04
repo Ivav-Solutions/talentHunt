@@ -1,9 +1,9 @@
 import React from 'react'
-import masklogo from '../assets/masklogo.png'
-import instagram from '../assets/instagram.png'
-import whatsapp from '../assets/whatsapp.png'
-import discord from '../assets/discord.png'
-import './Footer.css'
+import masklogo from '../../assets/images/masklogo.png'
+import instagram from '../../assets/images/instagram.png'
+import whatsapp from '../../assets/images/whatsapp.png'
+import discord from '../../assets/images/discord.png'
+import '../../assets/css/Footer.css'
 
 const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
-import './Home.css'
-import vector from '../assets/vector.png'
+import '../../assets/css/Home.css'
+import vector from '../../assets/images/vector.png'
 import { Link } from 'react-router-dom'
 
 const Home = () => {

@@ -1,9 +1,9 @@
 import React from 'react'
-import './Navbar.css'
-import masklogo from '../assets/masklogo.png'
-import notifications from '../assets/notifications.png'
-import eclipse from '../assets/eclipse.png'
-import frame from '../assets/frame.png'
+import '../../assets/css/Navbar.css'
+import masklogo from '../../assets/images/masklogo.png'
+import notifications from '../../assets/images/notifications.png'
+import eclipse from '../../assets/images/eclipse.png'
+import frame from '../../assets/images/frame.png'
 import { Link } from 'react-router-dom'
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import image1 from "../assets/image1.png"
-import './AboutCard.css'
+import image1 from "../../assets/images/image1.png"
+import "../../assets/css/AboutCard.css"
 
 const AboutCard = () => {
   return (

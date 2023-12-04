@@ -1,23 +1,20 @@
 import React from 'react'
-import './Talents.css'
+import '../assets/css/Talents.css'
 import { Link } from 'react-router-dom'
-import search from '../assets/search.png'
-import TalentCard from '../components/TalentCard'
-import music from '../assets/music.png'
-import James from '../assets/James.png'
-import angela from '../assets/angela.png'
-import shoe from '../assets/shoe.png'
-import harry from '../assets/harry.png'
-import decorations from '../assets/decorations.png'
-import paul from '../assets/paul.png'
-import cloth from '../assets/cloth.png'
-import mary from '../assets/mary.png'
-import chef from '../assets/chef.png'
-import deejay from '../assets/deejay.png'
-import dj from '../assets/dj.png'
-
-
-
+import search from '../assets/images/search.png'
+import TalentCard from '../components/frontend/TalentCard'
+import music from '../assets/images/music.png'
+import James from '../assets/images/James.png'
+import angela from '../assets/images/angela.png'
+import shoe from '../assets/images/shoe.png'
+import harry from '../assets/images/harry.png'
+import decorations from '../assets/images/decorations.png'
+import paul from '../assets/images/paul.png'
+import cloth from '../assets/images/cloth.png'
+import mary from '../assets/images/mary.png'
+import chef from '../assets/images/chef.png'
+import deejay from '../assets/images/deejay.png'
+import dj from '../assets/images/dj.png'
 
 const Talents = () => {
   return (

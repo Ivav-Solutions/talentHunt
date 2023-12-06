@@ -6,13 +6,11 @@
 } */
 
 .home {
-    background-color: #0135C7;
+    background: #0135c7;
+    /* height: 500px; */
 }
 
-.home-container {
-    max-width: 1140px;
-    
-}
+
 
 .intro-link {
     display: flex;
@@ -31,6 +29,7 @@
 
 .intro-text {
     text-align: center;
+    
 
 }
 
@@ -39,6 +38,7 @@
     font-weight: 700;
     color: white;
     font-family: 'Poppins', sans-serif;
+    line-height: normal;
 }
 
 .intro-text p {

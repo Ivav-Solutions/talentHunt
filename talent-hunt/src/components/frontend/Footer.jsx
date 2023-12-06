@@ -10,8 +10,8 @@ const Footer = () => {
     <div className="footer">
         <div className="footer-container">
             <div className="footer-icons">
-               <div>
-                 <img src={masklogo} alt="" width="100px" />    
+               <div className="footer-img">
+                 <img src={masklogo} alt="" />    
                </div>
                 <div>
                   <h1>Home</h1>

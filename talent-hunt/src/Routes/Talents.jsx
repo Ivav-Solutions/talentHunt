@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../assets/css/Talents.css'
 import { Link } from 'react-router-dom'
 import search from '../assets/images/search.png'
@@ -17,19 +17,23 @@ import deejay from '../assets/images/deejay.png'
 import dj from '../assets/images/dj.png'
 
 const Talents = () => {
+  const [pageIndex, setPageIndex] = useState(1)
+  const handlePageIndex = (number) => {
+    setPageIndex(number)
+  }
   return (
     <div className="talents">
       <div className="talent-container">
         <h1>Talents</h1>
-       <ul className="talent-link">
-         <li><Link>Discover your Best Talents</Link></li>
-         <li><Link>All Categories</Link></li>
-         <li><Link>Music</Link></li>
-         <li><Link>Disc Jockey</Link></li>
-         <li><Link>Event Planner</Link></li>
-         <li><Link><img src={search} alt="" /></Link></li>
-       </ul>
-       <div className="talentContainer-cards">
+       <div className="talent-link">
+         <button onClick={() => handlePageIndex(1)}>Discover your Best Talents</button>
+         <button onClick={() => handlePageIndex(2)} className="all">All Categories</button>
+         <button onClick={() => handlePageIndex(3)}>Music</button>
+         <button onClick={() => handlePageIndex(4)}>Disc Jockey</button>
+         <button onClick={() => handlePageIndex(5)}>Event Planner</button>
+         <button><img src={search} alt="" /></button>
+       </div>
+       {pageIndex == 1 && <div className="talentContainer-cards">
           <TalentCard
           talentName="James cold"
           talentTitle="singer"
@@ -77,7 +81,207 @@ const Talents = () => {
           image={dj}
           talentBtn="Book"
           />
-       </div>
+       </div>}
+
+       {pageIndex == 2 &&<div className="talentContainer-cards">
+          <TalentCard
+          talentName="James cold"
+          talentTitle="singer"
+          talentImage={James}
+          image={music}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Angela Peters"
+          talentTitle="Music Producer"
+          talentImage={angela}
+          image={shoe}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Harry Stone"
+          talentTitle="Event Planner"
+          talentImage={harry}
+          image={decorations}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Paul Smith"
+          talentTitle="Fashion Designer"
+          talentImage={paul}
+          image={cloth}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Mary Blues"
+          talentTitle="chef"
+          talentImage={mary}
+          image={chef}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Deejay Ivav"
+          talentTitle="Disc Jockey"
+          talentImage={deejay}
+          image={dj}
+          talentBtn="Book"
+          />
+       </div>}
+
+       {pageIndex == 3 && <div className="talentContainer-cards">
+          <TalentCard
+          talentName="James cold"
+          talentTitle="singer"
+          talentImage={James}
+          image={music}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Angela Peters"
+          talentTitle="Music Producer"
+          talentImage={angela}
+          image={shoe}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Harry Stone"
+          talentTitle="Event Planner"
+          talentImage={harry}
+          image={decorations}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Paul Smith"
+          talentTitle="Fashion Designer"
+          talentImage={paul}
+          image={cloth}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Mary Blues"
+          talentTitle="chef"
+          talentImage={mary}
+          image={chef}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Deejay Ivav"
+          talentTitle="Disc Jockey"
+          talentImage={deejay}
+          image={dj}
+          talentBtn="Book"
+          />
+       </div>}
+
+       {pageIndex == 4 && <div className="talentContainer-cards">
+          <TalentCard
+          talentName="James cold"
+          talentTitle="singer"
+          talentImage={James}
+          image={music}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Angela Peters"
+          talentTitle="Music Producer"
+          talentImage={angela}
+          image={shoe}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Harry Stone"
+          talentTitle="Event Planner"
+          talentImage={harry}
+          image={decorations}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Paul Smith"
+          talentTitle="Fashion Designer"
+          talentImage={paul}
+          image={cloth}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Mary Blues"
+          talentTitle="chef"
+          talentImage={mary}
+          image={chef}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Deejay Ivav"
+          talentTitle="Disc Jockey"
+          talentImage={deejay}
+          image={dj}
+          talentBtn="Book"
+          />
+       </div>}
+
+       {pageIndex == 5 && <div className="talentContainer-cards">
+          <TalentCard
+          talentName="James cold"
+          talentTitle="singer"
+          talentImage={James}
+          image={music}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Angela Peters"
+          talentTitle="Music Producer"
+          talentImage={angela}
+          image={shoe}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Harry Stone"
+          talentTitle="Event Planner"
+          talentImage={harry}
+          image={decorations}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Paul Smith"
+          talentTitle="Fashion Designer"
+          talentImage={paul}
+          image={cloth}
+          talentBtn="Book" 
+          />
+
+          <TalentCard
+          talentName="Mary Blues"
+          talentTitle="chef"
+          talentImage={mary}
+          image={chef}
+          talentBtn="Book"
+          />
+
+          <TalentCard
+          talentName="Deejay Ivav"
+          talentTitle="Disc Jockey"
+          talentImage={deejay}
+          image={dj}
+          talentBtn="Book"
+          />
+       </div>}
 
         <div className="talents-link">
           <button className="talentlink-Btn"><Link>Show me more</Link></button>

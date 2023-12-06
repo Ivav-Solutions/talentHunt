@@ -1,9 +1,10 @@
 import './App.css'
 import AboutUs from './Routes/AboutUs'
-import Contact from './Routes/Contact'
+import ContactUs from './Routes/ContactUs'
 import Talents from './Routes/Talents'
 import Home from './components/frontend/Home'
 import Footer from './components/frontend/Footer'
+
 
 
 
@@ -15,9 +16,9 @@ function App() {
     <>
       <div className="App_container">
         <Home />
-        <Talents />
-        <AboutUs />
-        <Contact />
+        <section id="talents"><Talents /></section>
+        <section id="aboutus"><AboutUs /></section>
+        <section id="contactus"><ContactUs /></section>
         <Footer />
       </div>
     </>

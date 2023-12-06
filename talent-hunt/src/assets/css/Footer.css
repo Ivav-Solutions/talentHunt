@@ -1,7 +1,8 @@
 .footer {
     background-color: black;
     color: white;
-    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-icons {
@@ -37,10 +38,23 @@
 
 
 .footer-container {
-    display: flex;
+    /* display: flex;
     gap: 200px;
-    margin-left: 50px
+    margin-left: 50px; */
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    gap: 220px;
+    margin-left: 30px;
     
+    
+}
+
+.footer-img {
+    width: 100px;
+    height: 95.113px;
+    flex-shrink: 0;
+    margin-left: 20px;
 }
 
 /* .footer-container {

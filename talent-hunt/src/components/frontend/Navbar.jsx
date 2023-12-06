@@ -14,9 +14,10 @@ const Navbar = () => {
        <div className="nav-right">
           <img src={masklogo} alt="" className="logo" />
           <ul className="nav-links">
-            <li><Link>Talents</Link></li>
-            <li><Link>About Us</Link></li>
-            <li><Link>Contact Us</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><a href="#talents">Talents</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
           </ul>
         </div>
 

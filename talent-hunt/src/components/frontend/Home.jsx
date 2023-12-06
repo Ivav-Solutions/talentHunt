@@ -4,6 +4,7 @@ import '../../assets/css/Home.css'
 import vector from '../../assets/images/vector.png'
 import { Link } from 'react-router-dom'
 
+
 const Home = () => {
   return (
     <div className="home">

@@ -4,7 +4,8 @@ import masklogo from '../../assets/images/masklogo.png'
 import notifications from '../../assets/images/notifications.png'
 import eclipse from '../../assets/images/eclipse.png'
 import frame from '../../assets/images/frame.png'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
        <div className="nav-right">
           <img src={masklogo} alt="" className="logo" />
           <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
+            <li>Home</li>
             <li><a href="#talents">Talents</a></li>
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contactus">Contact Us</a></li>

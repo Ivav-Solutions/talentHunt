@@ -284,7 +284,7 @@ const Talents = () => {
        </div>}
 
         <div className="talents-link">
-          <button className="talentlink-Btn"><Link>Show me more</Link></button>
+          <button className="talentlink-Btn">Show me more</button>
         </div>
   
       </div>

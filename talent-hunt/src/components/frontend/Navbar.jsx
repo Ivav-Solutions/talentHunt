@@ -16,9 +16,9 @@ const Navbar = () => {
           <img src={masklogo} alt="" className="logo" />
           <ul className="nav-links">
             <li>Home</li>
-            <li><HashLink href="/#talents">Talents</HashLink></li>
-            <li><HashLink href="/#aboutus">About Us</HashLink></li>
-            <li><HashLink href="/#contactus">Contact Us</HashLink></li>
+            <li><HashLink to="/#talents">Talents</HashLink></li>
+            <li><HashLink to="/#aboutus">About Us</HashLink></li>
+            <li><HashLink to="/#contactus">Contact Us</HashLink></li>
           </ul>
         </div>
 

@@ -2,8 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import '../../assets/css/Home.css'
 import vector from '../../assets/images/vector.png'
-import { Link } from 'react-router-dom'
-
+import AboutUs from '../../Routes/AboutUs';
+import ContactUs from '../../Routes/ContactUs';
+import Talents from '../../Routes/Talents';
 
 const Home = () => {
   return (
@@ -21,8 +22,12 @@ const Home = () => {
          </div>
        </div>
      </div>
+     <div>
+        <section id="talents"><Talents /></section>
+        <section id="aboutus"><AboutUs /></section>
+        <section id="contactus"><ContactUs /></section>
+      </div>
     </div>
-
   )
 }
 

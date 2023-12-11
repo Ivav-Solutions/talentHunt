@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../assets/css/Talents.css'
-import { Link } from 'react-router-dom'
 import search from '../assets/images/search.png'
 import TalentCard from '../components/frontend/TalentCard'
 import music from '../assets/images/music.png'

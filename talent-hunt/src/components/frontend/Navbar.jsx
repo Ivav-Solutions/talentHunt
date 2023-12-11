@@ -4,8 +4,8 @@ import masklogo from '../../assets/images/masklogo.png'
 import notifications from '../../assets/images/notifications.png'
 import eclipse from '../../assets/images/eclipse.png'
 import frame from '../../assets/images/frame.png'
-// import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -16,9 +16,9 @@ const Navbar = () => {
           <img src={masklogo} alt="" className="logo" />
           <ul className="nav-links">
             <li>Home</li>
-            <li><a href="#talents">Talents</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
+            <li><HashLink href="/#talents">Talents</HashLink></li>
+            <li><HashLink href="/#aboutus">About Us</HashLink></li>
+            <li><HashLink href="/#contactus">Contact Us</HashLink></li>
           </ul>
         </div>
 
@@ -26,6 +26,7 @@ const Navbar = () => {
           <img src={notifications} alt="" width="32px" />
           <img src={eclipse} alt="" width="32px" />
           <img src={frame} alt="" width="100px" />
+          <li><Link to="/register">Get Started</Link></li>
         </div>
      </div>  
    </div>

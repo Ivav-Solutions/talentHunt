@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './components/auth/Register';
 import Home from './components/frontend/Home';
-import Footer from './components/frontend/Footer';
+// import Footer from './components/frontend/Footer';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           {/* Other routes */}
         </Routes>
         <div className="App_container">
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </Router>

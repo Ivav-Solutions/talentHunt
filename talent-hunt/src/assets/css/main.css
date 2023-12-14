@@ -1,0 +1,39 @@
+.register {
+    background-color: #fff;
+}
+
+ .register-container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+    
+}
+
+.register-img {
+    border-radius: 0px 0px 162.68px 0px;
+    background: white;
+    border: 10px solid blue;
+    width: 400px;
+    min-height: 100vh;
+    padding: 5px;
+    /* transform: rotate(-37.891deg) translate(-37px, 0px); */
+    /* transform: rotate(-37.891deg); */
+    /* transform: translateX(-37px); */
+    
+    
+    
+
+} 
+
+.first-img {
+    border-radius: 0px 0px 162.68px 0px;
+    border: 5px solid #FFF;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+

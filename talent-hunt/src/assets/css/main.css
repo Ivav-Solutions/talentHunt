@@ -173,13 +173,17 @@ html {
   .authRight form {
     width: 80%;
   }
+  .authRight {
+    flex: 5; /* Take up the full width on smaller screens */
+    margin-left: 0px;
+  }
 }
 
-@media (max-width: 1673px) {
+@media (max-width: 1670px) {
   .authLeft {
     flex: 5; /* 60% */
-    top: -28rem;
-    left: 90px;
+    top: -27rem;
+    left: 70px;
   }
 
   .authRight {
@@ -189,7 +193,7 @@ html {
 }
 
 /* Mobile view */
-@media (max-width: 1118px) {
+@media (max-width: 1290px) {
   .authContainer {
     flex-direction: column; /* Change to a column layout for smaller screens */
   }
@@ -201,5 +205,13 @@ html {
   .authRight {
     flex: 1; /* Take up the full width on smaller screens */
     padding: 20px;
+    margin-left: 0px;
   }
 }
+/* 
+@media (min-width: 2230px) {
+    .authLeft {
+        top: 10rem;
+        left: -21rem;
+    }
+} */

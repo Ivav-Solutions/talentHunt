@@ -4,6 +4,8 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+font-style: normal;
+line-height: normal;
 }
 
 .authContainer {
@@ -58,13 +60,15 @@ html {
 /* ... (rest of your styles) ... */
 
 .authRight h2 {
-  font-size: 24px;
+  font-size: 40px;
+  font-weight: 900;
   margin-bottom: 16px;
   text-align: center;
 }
 
 .authRight p {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -87,7 +91,7 @@ html {
 .authRight input {
   flex: 1;
   padding: 8px 8px 8px 28px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .authRight label {
@@ -118,6 +122,7 @@ html {
   color: #0135c7;
   text-decoration: none;
   font-weight: bold;
+  font-weight: 400;
 }
 
 .password-container {
@@ -130,7 +135,7 @@ html {
 .password-container input {
   flex: 1;
   padding: 8px 8px 8px 28px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .password-container .eye-icon {

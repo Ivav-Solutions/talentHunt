@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/css/TalentCard.css'
+import '../../assets/css/index.css'
 // import { Link } from 'react-router-dom'
 
 const TalentCard = ({ image, talentImage, talentName, talentTitle, talentBtn }) => {

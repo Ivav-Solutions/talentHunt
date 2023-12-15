@@ -1,39 +1,194 @@
-.register {
-    background-color: #fff;
+/* Register */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
- .register-container {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    
-    
+.authContainer {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
-.register-img {
-    border-radius: 0px 0px 162.68px 0px;
-    background: white;
-    border: 10px solid blue;
-    width: 400px;
-    min-height: 100vh;
-    padding: 5px;
-    /* transform: rotate(-37.891deg) translate(-37px, 0px); */
-    /* transform: rotate(-37.891deg); */
-    /* transform: translateX(-37px); */
-    
-    
-    
-
-} 
-
-.first-img {
-    border-radius: 0px 0px 162.68px 0px;
-    border: 5px solid #FFF;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-
+.authLeft {
+  flex: 6; /* 60% */
+  padding: 20px;
+  border-radius: 0px 0px 162.68px 0px;
+  border: 20px solid #0135c7;
+  background: #0135c7;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(-37.891deg);
+  display: block;
+  margin-left: -32%;
+  /* width: 1079.079px; */
+  height: 1171.361px;
+  flex-shrink: 0;
 }
 
+.authLeft img {
+  border-radius: 0px 0px 162.68px 0px;
+  border: 5px solid #fff;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' based on your preference */
+}
 
+.authRight {
+  flex: 4; /* 40% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+.authRight form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Set a max-width for better readability on larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+  width: 50%;
+}
+
+/* ... (rest of your styles) ... */
+
+.authRight h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.authRight p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.authRight .input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.authRight .input-container .icon,
+.authRight .password-container .icon {
+  position: absolute;
+  left: 8px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.authRight input {
+  flex: 1;
+  padding: 8px 8px 8px 28px;
+  font-size: 14px;
+}
+
+.authRight label {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.input-container .label {
+  margin-right: 8px;
+}
+
+.authRight button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #255aeb;
+}
+
+.authRight button:hover {
+  background-color: #255aeb;
+}
+
+.authRight p a {
+  color: #0135c7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.password-container input {
+  flex: 1;
+  padding: 8px 8px 8px 28px;
+  font-size: 14px;
+}
+
+.password-container .eye-icon {
+  position: absolute;
+  right: 10px; /* Adjust the right position as needed */
+  cursor: pointer;
+  top: 25%;
+}
+
+/* Additional styling for the eye icon, for example, change color on hover */
+.password-container .eye-icon:hover {
+  color: #0135c7;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  flex: 1;
+  font-size: 14px;
+  margin-left: 8px;
+  margin-bottom: 16px;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
+
+@media (max-width: 450px) {
+  .authRight form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1673px) {
+  .authLeft {
+    flex: 5; /* 60% */
+  }
+
+  .authRight {
+    flex: 5; /* Take up the full width on smaller screens */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 1118px) {
+  .authContainer {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+  }
+
+  .authLeft {
+    display: none; /* Hide authLeft on smaller screens */
+  }
+
+  .authRight {
+    flex: 1; /* Take up the full width on smaller screens */
+    padding: 20px;
+  }
+}

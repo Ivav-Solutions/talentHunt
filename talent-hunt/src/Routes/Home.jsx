@@ -1,10 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
-import '../../assets/css/Home.css'
-import vector from '../../assets/images/vector.png'
-import AboutUs from '../../Routes/AboutUs';
-import ContactUs from '../../Routes/ContactUs';
-import Talents from '../../Routes/Talents';
+import Navbar from '../components/frontend/Navbar'
+import '../assets/css/index.css'
+import vector from '../assets/images/vector.png'
+import AboutUs from '../components/frontend/AboutUs';
+import ContactUs from '../components/frontend/ContactUs';
+import Talents from '../components/frontend/Talents';
+import Footer from '../components/frontend/Footer';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
         <section id="aboutus"><AboutUs /></section>
         <section id="contactus"><ContactUs /></section>
       </div>
+      <Footer />
     </div>
   )
 }

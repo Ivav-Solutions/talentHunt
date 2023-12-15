@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/css/Navbar.css'
+import '../../assets/css/index.css'
 import masklogo from '../../assets/images/masklogo.png'
 import notifications from '../../assets/images/notifications.png'
 import eclipse from '../../assets/images/eclipse.png'

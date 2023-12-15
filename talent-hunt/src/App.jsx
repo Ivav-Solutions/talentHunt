@@ -1,17 +1,18 @@
 import React from 'react';
-import './App.css';
+import '/src/assets/css/index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Register from './components/auth/Register';
-import Home from './components/frontend/Home';
-// import Footer from './components/frontend/Footer';
+import Register from './components/auth/register';
+import Login from './components/auth/login';
+import Home from './Routes/Home';
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path="/register" element={<Register />} />
           <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

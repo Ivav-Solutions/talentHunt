@@ -3,7 +3,7 @@ import masklogo from '../../assets/images/masklogo.png'
 import instagram from '../../assets/images/instagram.png'
 import whatsapp from '../../assets/images/whatsapp.png'
 import discord from '../../assets/images/discord.png'
-import '../../assets/css/Footer.css'
+import '../../assets/css/index.css'
 
 const Footer = () => {
   return (

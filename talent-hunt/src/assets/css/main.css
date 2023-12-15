@@ -4,8 +4,8 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-font-style: normal;
-line-height: normal;
+  font-style: normal;
+  line-height: normal;
 }
 
 .authContainer {
@@ -92,6 +92,8 @@ line-height: normal;
   flex: 1;
   padding: 8px 8px 8px 28px;
   font-size: 16px;
+  border-radius: 10px;
+  background: #e7e7e7;
 }
 
 .authRight label {
@@ -175,6 +177,8 @@ line-height: normal;
 @media (max-width: 1673px) {
   .authLeft {
     flex: 5; /* 60% */
+    top: -100px;
+    left: 100px;
   }
 
   .authRight {

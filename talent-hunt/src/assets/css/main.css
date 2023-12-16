@@ -6,6 +6,7 @@ html {
   height: 100%;
   font-style: normal;
   line-height: normal;
+  font-family: "Poppins", sans-serif;
 }
 
 .authContainer {
@@ -100,6 +101,17 @@ html {
 .authRight label {
   font-size: 12px;
   margin-top: 8px;
+}
+
+.input-box {
+  display: flex;
+  gap: 5px;
+}
+
+.input__box {
+  border: 1px solid black;
+  width: 25px;
+  height: 35px;
 }
 
 .input-container .label {
@@ -207,6 +219,10 @@ html {
     padding: 20px;
     margin-left: 0px;
   }
+
+
+
+
 }
 /* 
 @media (min-width: 2230px) {

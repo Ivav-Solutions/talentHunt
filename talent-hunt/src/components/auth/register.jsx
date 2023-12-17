@@ -15,12 +15,16 @@ const Register = () => {
   return (
     <div className="authContainer">
       <div className="authLeft">
-        <img src={reg5} alt="" className="first-img" />
+        <Link to="/">
+          <img src={reg5} alt="" className="first-img" />
+        </Link>
       </div>
       <div className="authRight">
         {/* Your signup form goes here */}
         <form>
+          <Link to="/">
           <h2>IVAV TALENTS</h2>
+          </Link>
           <p>Create an Account</p>
           <div className="input-container">
             <FaUser className="icon" />

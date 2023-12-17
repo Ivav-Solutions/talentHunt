@@ -20,7 +20,9 @@ const Login = () => {
       <div className="authRight">
         {/* Your signup form goes here */}
         <form>
-          <h2>IVAV TALENTS</h2>
+          <Link to="/">
+            <h2>IVAV TALENTS</h2>
+          </Link>
           <p>Create an Account</p>
           <div className="input-container">
             <TfiEmail className="icon" />
@@ -42,11 +44,13 @@ const Login = () => {
               />
               Remember me
             </label>
-            <p><Link>Forgot Password?</Link></p>
+            <p>
+              <Link>Forgot Password?</Link>
+            </p>
           </div>
           <button>Login</button>
           <p>
-            Do you have an account? <Link to='/register'>Register here</Link>
+            Do you have an account? <Link to="/register">Register here</Link>
           </p>
         </form>
       </div>

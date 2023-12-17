@@ -1,6 +1,7 @@
 /* Register */
 body,
 html {
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -25,9 +26,8 @@ html {
   overflow: hidden;
   transform: rotate(-37.891deg);
   display: block;
-  top: -13rem;
+  top: -10rem;
   margin-left: -32%;
-  /* width: 1079.079px; */
   height: 1171.361px;
   flex-shrink: 0;
 }
@@ -59,7 +59,10 @@ html {
   width: 50%;
 }
 
-/* ... (rest of your styles) ... */
+.authRight form a {
+    text-decoration: none;
+    color: #000;
+}
 
 .authRight h2 {
   font-size: 40px;
@@ -69,6 +72,7 @@ html {
 }
 
 .authRight p {
+  margin-top: 1rem;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 24px;
@@ -86,7 +90,7 @@ html {
 .authRight .password-container .icon {
   position: absolute;
   left: 8px;
-  top: 40%;
+  top: 46%;
   transform: translateY(-50%);
 }
 
@@ -194,8 +198,10 @@ html {
 @media (max-width: 1670px) {
   .authLeft {
     flex: 5; /* 60% */
-    top: -27rem;
-    left: 70px;
+    /* top: -27rem;
+    left: 70px; */
+    top: -18rem;
+    left: 10px;
   }
 
   .authRight {
@@ -205,7 +211,7 @@ html {
 }
 
 /* Mobile view */
-@media (max-width: 1290px) {
+@media (max-width: 1350px) {
   .authContainer {
     flex-direction: column; /* Change to a column layout for smaller screens */
   }
@@ -224,10 +230,10 @@ html {
 
 
 }
-/* 
+
 @media (min-width: 2230px) {
-    .authLeft {
-        top: 10rem;
-        left: -21rem;
-    }
-} */
+  .authLeft {
+    top: 10rem;
+    left: -21rem;
+  }
+}

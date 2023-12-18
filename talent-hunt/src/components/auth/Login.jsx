@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import reg5 from "../../assets/images/reg5.png";
-import { FaUser } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
-import { SlCalender } from "react-icons/sl";
 import { RiLock2Line } from "react-icons/ri";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -45,7 +43,7 @@ const Login = () => {
               Remember me
             </label>
             <p>
-              <Link>Forgot Password?</Link>
+              <Link to="/forgot-password">Forgot Password?</Link>
             </p>
           </div>
           <button>Login</button>

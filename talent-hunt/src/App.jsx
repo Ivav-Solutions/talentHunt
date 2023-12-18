@@ -3,10 +3,10 @@ import '/src/assets/css/index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './components/auth/register';
 import Login from './components/auth/login';
-import ResetPassword from './components/auth/ResetPassword';
+import ForgotPassword from './components/auth/forgot-password';
 import Home from './Routes/Home';
-import Verification from './components/auth/Verification';
-import ChangePassword from './components/auth/ChangePassword';
+import Verification from './components/auth/verification';
+import ResetPassword from './components/auth/reset-password';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/verification" element={<Verification />} />
-          <Route path="/resetpassword" element={<ResetPassword />} />
-          <Route path="/changepassword" element={<ChangePassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

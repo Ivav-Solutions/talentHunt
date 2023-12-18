@@ -1,19 +1,22 @@
+/* Import Google Font for animation */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
 /* Reset some default styles and provide a basic styling */
-body,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
 h1,
 h2,
 ul,
 li,
 p {
-  margin: 0;
-  padding: 0;
+  font-style: normal;
+  line-height: normal;
 }
 
 /* Navbar.css */
-
-body {
-  font-family: Poppins;
-}
 
 .home-container {
   background: #0135c7;
@@ -79,6 +82,7 @@ body {
 .nav-right button {
   background-color: white;
   border-radius: 100px;
+  border: none;
   color: #0135c7;
   padding: 8px 15px;
   cursor: pointer;
@@ -203,12 +207,9 @@ body {
   }
 }
 
-/* Talents Page Styles */
 .talents {
-  padding: 50px 10%;
-  background-color: #f0f0f0;
+  padding: 90px 10%;
 }
-
 .talent-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -222,73 +223,426 @@ body {
   line-height: normal;
 }
 
-.talent-container p {
-  text-align: left;
+.talent-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+
+.talent-link button {
+  font-size: 15px;
+  background-color: #0135c7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: -1.1rem;
+  border-radius: 100px;
+}
+
+.talents-link {
+  display: flex;
+  justify-content: center;
+}
+
+.talentlink-Btn {
+  padding: 16px 30px;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(1, 53, 199, 0.5);
+  background: #fff;
+  margin-top: 30px;
+}
+
+/* Add general styles for the talent card container */
+.card {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between; /* Distribute space between cards */
+  margin-right: -50px; /* Compensate for negative margin on the last item in the row */
+}
+.talentCard {
+  width: calc(32.333% - 15px); /* Calculate one-third width with margin */
+  margin-bottom: 30px; /* Add margin between rows */
+  margin-right: 30px; /* Add margin-right after each talent card */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Set flex direction to column */
+}
+/* Remove margin-right for the last talentCard to prevent extra space */
+.talentCard:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Style the thumbnail image */
+.talentCard-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style the talent card information section */
+.talentCard-info {
+  padding: 10px;
+  display: flex;
+}
+
+/* Style the talent avatar image */
+.talent-avatar {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  top: -2.2rem;
+  left: 5px;
+}
+
+/* Style the talent text (name and title) */
+.talent-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Set flex direction to column */
+}
+
+/* Style the talent name */
+.talent-text h3 {
+  margin: 0;
+  color: #000;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Style the talent title */
+.talent-text p {
+  margin: 0;
+  color: #000;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.talent-link {
+/* Style the talent button */
+.talent-btn {
+  background-color: #fff;
+  color: #0135c7;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px 2rem; /* Add margin to separate from talent text */
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  border: 1px solid #0135c7;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  padding: 6px 33px;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
 }
 
-.talent-link button {
+/* Hover effect for the button */
+.talent-btn:hover {
   background-color: #0135c7;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  color: #fff;
 }
 
-.talentlink-Btn {
-  background-color: #0135c7;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
+/* Style for the AboutUs container */
 
-.talentContainer-cards {
+.AboutUs {
+    padding: 0px 10%;
+}
+.AboutUs-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.talentCard {
-  flex-basis: calc(33.33% - 20px);
+/* Style for the reward cards */
+.reward-container {
+  display: flex;
+  flex: 5;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -30px;
+}
+
+/* Style for individual reward card */
+.reward-card {
+  width: calc(38% - 15px); /* Calculate one-third width with margin */
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-direction: column; /* Set flex direction to column */
   background-color: #fff;
-  border: 1px solid #ddd;
+  padding: 10px 29px 12px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for reward card */
+.reward-card:hover {
+  transform: translateY(-5px);
+}
+
+.reward-card::nth-child(2n) {
+  margin-right: 0;
+}
+
+/* Style for reward card images */
+.reward-card img {
+  width: 32px;
+  height: 46.862px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.reward-card h1 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reward-card p {
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -0.5rem;
+}
+
+/* Style for about-info section */
+.about-info {
+  flex: 5;
+  padding: 40px 0px 40px 40px;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style for the main heading in about-info */
+.about-info h1 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+
+/* Style for the subheading in about-info */
+.about-info h2 {
+  font-size: 36px;
+  color: #212121;
   margin-bottom: 20px;
-  padding: 20px;
+  font-weight: 500;
+  margin-top: -0.5rem;
+}
+
+/* Style for the paragraph in about-info */
+.about-info p {
+  color: #5e5e5e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+/* Add animation to main heading */
+.about-info h1 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add animation to subheading */
+.about-info h2 {
+  animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+/* Add animation to paragraph */
+.about-info p {
+  animation: fadeInUp 1s ease-in-out 1s;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for the contact container */
+.contact {
+  padding: 50px 10%;
+}
+
+/* Style for the contact container */
+.contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.talentCard-info {
+/* Style for the form section */
+.form {
+  flex: 5;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 20px 30px 0px rgba(51, 51, 51, 0.1);
+}
+
+/* Style for form inputs and textarea */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.contactBTN {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
-.talent-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.talent-text {
-  max-width: 200px;
-}
-
-.talent-btn {
+/* Style for the send message button */
+.contact-btn {
   background-color: #0135c7;
-  color: white;
+  border-radius: 100px;
+  color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 20px;
   cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
 }
+
+/* Hover effect for the button */
+.contact-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Style for the contact info section */
+.contact-info {
+  flex: 5;
+  padding: 40px 0px 40px 40px;
+  margin-left: 2.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style for the main heading in contact info */
+.contact-info h1 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Style for the subheading in contact info */
+.contact-info h2 {
+  font-size: 36px;
+  color: #212121;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: -0.5rem;
+}
+
+/* Style for the paragraph in contact info */
+.contact-info p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Style for the footer container */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 58px 166px 58.887px 150px;
+  }
+  
+  /* Style for the footer container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the footer icons section */
+  .footer-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the footer image */
+  .footer-img,
+  .footer-link {
+    margin-right: 220px;
+  }
+  .footer-img img {
+    width: 100px;
+height: 95.113px;
+  }
+  
+  /* Style for the header in footer icons */
+  .footer-icons h1 {
+    color: #0135C7;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Style for the paragraph in footer icons */
+  .footer-icons p {
+    margin: 0;
+    color: #FFF;
+font-size: 14px;
+font-weight: 400;
+  }
+  
+  /* Style for the links section in footer */
+  .footer-socials {
+    display: flex;
+  flex-direction: column;
+  }
+  
+  /* Style for the paragraph in footer socials */
+  .footer-socials h1 {
+    font-size: 1.2em;
+    color: #0135C7;
+font-size: 18px;
+font-weight: 600;
+  }
+  
+  
+  /* Style for the social media icons in footer */
+  .footer-socials img {
+    height: auto;
+    margin: 0 5px;
+    width: 32px;
+height: 32px;
+  }
+  
+  /* Hover effect for the social media icons */
+  .footer-socials img:hover {
+    opacity: 0.8;
+  }
+  

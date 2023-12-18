@@ -1,7 +1,13 @@
-import React from 'react';
-import '../../assets/css/index.css';
+import React from "react";
+import "../../assets/css/index.css";
 
-const TalentCard = ({ image, talentImage, talentName, talentTitle, talentBtn }) => {
+const TalentCard = ({
+  image,
+  talentImage,
+  talentName,
+  talentTitle,
+  talentBtn,
+}) => {
   return (
     <div className="talentCard">
       <img className="talentCard-thumbnail" src={image} alt="" />
@@ -10,9 +16,9 @@ const TalentCard = ({ image, talentImage, talentName, talentTitle, talentBtn }) 
         <div className="talent-text">
           <h3>{talentName}</h3>
           <p>{talentTitle}</p>
-          <button className="talent-btn">{talentBtn}</button>
         </div>
       </div>
+      <button className="talent-btn">{talentBtn}</button>
     </div>
   );
 };

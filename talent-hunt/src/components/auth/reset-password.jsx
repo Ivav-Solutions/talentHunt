@@ -13,19 +13,25 @@ const ChangePassword = () => {
             {/* Your change password goes here */}
             <form>
                 <h2>IVAV TALENTS</h2>
-                <p>Create a new password</p>
+                <p>To complete the reset password process, Please enter the code sent to the email address</p>
                 <div className="password-container">
                     <RiLock2Line className="icon" />
-                    <input type="password" placeholder="Password" />
+                    <input type="text" placeholder="Code" name="code"/>
                     <MdOutlineRemoveRedEye className="eye-icon" />
                 </div>
 
                 <div className="password-container">
                     <RiLock2Line className="icon" />
-                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="New Password" />
                     <MdOutlineRemoveRedEye className="eye-icon" />
                 </div>
-                <button>Create</button>
+
+                <div className="password-container">
+                    <RiLock2Line className="icon" />
+                    <input type="password" placeholder="Comfirm New Password" />
+                    <MdOutlineRemoveRedEye className="eye-icon" />
+                </div>
+                <button>Reset Password</button>
             </form>
 
         </div>

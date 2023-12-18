@@ -26,27 +26,33 @@ const talentsData = [
 ];
 
 const Talents = () => {
-  const [pageIndex, setPageIndex] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const handlePageIndex = (number) => {
-    setPageIndex(number);
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
   };
 
   return (
     <div className="talents">
       <div className="talent-container">
         <h1>Talents</h1>
-        <p>Discover your Best Talents</p>
         <div className="talent-link">
-          <button onClick={() => handlePageIndex(2)} className="all">All Categories</button>
-          <button onClick={() => handlePageIndex(3)}>Music</button>
-          <button onClick={() => handlePageIndex(4)}>Disc Jockey</button>
+          <p>Discover your Best Talents</p>
+          <button onClick={() => handleCategoryChange('All')}>All Categories</button>
+          <button onClick={() => handleCategoryChange('Music')}>Music</button>
+          <button onClick={() => handleCategoryChange('Disc Jockey')}>Disc Jockey</button>
+          <button onClick={() => handleCategoryChange('Event Planner')}>Event Planner</button>
+          {/* Add more category buttons as needed */}
           <button><img src={search} alt="" /></button>
         </div>
 
-        {talentsData.map((talent, index) => (
-          pageIndex === index + 1 && <TalentCard key={index} {...talent} />
-        ))}
+        <div className="card">
+          {talentsData
+            .filter((talent) => selectedCategory === 'All' || talent.talentTitle === selectedCategory)
+            .map((talent, index) => (
+              <TalentCard key={index} {...talent} />
+            ))}
+          </div>
 
         <div className="talents-link">
           <button className="talentlink-Btn">Show me more</button>

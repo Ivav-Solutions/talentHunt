@@ -208,7 +208,7 @@ p {
 }
 
 .talents {
-  padding: 90px 10%;
+  padding: 80px 10% 90px 10%;
 }
 .talent-container {
   max-width: 1200px;
@@ -218,9 +218,8 @@ p {
 .talent-container h1 {
   text-align: left;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  margin: 0;
 }
 
 .talent-link {
@@ -261,8 +260,9 @@ p {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   justify-content: space-between; /* Distribute space between cards */
-  margin-right: -50px; /* Compensate for negative margin on the last item in the row */
+  /* margin-right: -50px; */
 }
+
 .talentCard {
   width: calc(32.333% - 15px); /* Calculate one-third width with margin */
   margin-bottom: 30px; /* Add margin between rows */
@@ -356,8 +356,9 @@ p {
 /* Style for the AboutUs container */
 
 .AboutUs {
-    padding: 0px 10%;
+  padding: 0px 10%;
 }
+
 .AboutUs-container {
   display: flex;
   flex-wrap: wrap;
@@ -377,7 +378,7 @@ p {
 
 /* Style for individual reward card */
 .reward-card {
-  width: calc(38% - 15px); /* Calculate one-third width with margin */
+  width: calc(36% - 15px); /* Calculate one-third width with margin */
   display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -498,7 +499,8 @@ p {
 .form {
   flex: 5;
   background-color: #fff;
-  padding: 40px;
+  /* padding: 40px; */
+  padding-right: 1rem;
   border-radius: 10px;
   box-shadow: 2px 20px 30px 0px rgba(51, 51, 51, 0.1);
 }
@@ -574,75 +576,81 @@ p {
 
 /* Style for the footer container */
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 58px 166px 58.887px 150px;
-  }
-  
-  /* Style for the footer container */
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Style for the footer icons section */
-  .footer-icons {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Style for the footer image */
-  .footer-img,
-  .footer-link {
-    margin-right: 220px;
-  }
-  .footer-img img {
-    width: 100px;
-height: 95.113px;
-  }
-  
-  /* Style for the header in footer icons */
-  .footer-icons h1 {
-    color: #0135C7;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  
-  /* Style for the paragraph in footer icons */
-  .footer-icons p {
-    margin: 0;
-    color: #FFF;
-font-size: 14px;
-font-weight: 400;
-  }
-  
-  /* Style for the links section in footer */
-  .footer-socials {
-    display: flex;
+  background-color: #000;
+  color: #fff;
+  padding: 58px 166px 58.887px 150px;
+}
+
+/* Style for the footer container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style for the footer icons section */
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the footer image */
+.footer-img,
+.footer-link {
+  margin-right: 220px;
+}
+
+.footer-img img {
+  width: 100px;
+  height: 95.113px;
+}
+
+/* Style for the header in footer icons */
+.footer-icons h1 {
+  color: #0135c7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Style for the paragraph in footer icons */
+.footer-icons p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Style for the links section in footer */
+.footer-socials {
+  display: flex;
   flex-direction: column;
-  }
-  
-  /* Style for the paragraph in footer socials */
-  .footer-socials h1 {
-    font-size: 1.2em;
-    color: #0135C7;
-font-size: 18px;
-font-weight: 600;
-  }
-  
-  
-  /* Style for the social media icons in footer */
-  .footer-socials img {
-    height: auto;
-    margin: 0 5px;
-    width: 32px;
-height: 32px;
-  }
-  
-  /* Hover effect for the social media icons */
-  .footer-socials img:hover {
-    opacity: 0.8;
-  }
-  
+}
+
+/* Style for the paragraph in footer socials */
+.footer-socials h1 {
+  font-size: 1.2em;
+  color: #0135c7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Style for the social media icons in footer */
+.footer-socials img {
+  height: auto;
+  margin: 0 5px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Hover effect for the social media icons */
+.footer-socials img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1870px) {
+    .footer-img,
+    .footer-link {
+      margin-right: 180px;
+    }
+}

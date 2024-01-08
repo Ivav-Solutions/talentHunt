@@ -7,6 +7,7 @@ import ForgotPassword from './components/auth/forgot-password';
 import Home from './Routes/Home';
 import Verification from './components/auth/verification';
 import ResetPassword from './components/auth/reset-password';
+import Profile from './components/dashboard/Profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/verification" element={<Verification />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/profile" element={<Profile />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

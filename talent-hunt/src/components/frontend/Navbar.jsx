@@ -41,6 +41,8 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import "../../assets/css/index.css";
 import masklogo from "../../assets/images/masklogo.png";
+import notifications from "../../assets/images/notifications.png"
+import eclipse from "../../assets/images/eclipse.png"
 
 
 // Navbar component
@@ -66,12 +68,16 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-right ${mobileMenuVisible ? 'active' : ''}`}>
+          <img src={notifications} alt="" />
+          <img src={eclipse} alt="" width="32px" />
           <button>
             <HashLink to="/register">Get Started</HashLink>
           </button>
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
             &#9776;
           </div>
+          
+          
         </div>
       </div>
     </div>

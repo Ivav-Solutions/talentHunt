@@ -38,12 +38,12 @@ const Talents = () => {
         <h1>Talents</h1>
         <div className="talent-link">
           <p>Discover your Best Talents</p>
-          <button onClick={() => handleCategoryChange('All')}>All Categories</button>
-          <button onClick={() => handleCategoryChange('Music')}>Music</button>
-          <button onClick={() => handleCategoryChange('Disc Jockey')}>Disc Jockey</button>
-          <button onClick={() => handleCategoryChange('Event Planner')}>Event Planner</button>
+          <button className="buttonLink" onClick={() => handleCategoryChange('All')}>All Categories</button>
+          <button className="btn-link" onClick={() => handleCategoryChange('Music')}>Music</button>
+          <button className="btn-link" onClick={() => handleCategoryChange('Disc Jockey')}>Disc Jockey</button>
+          <button className="btn-link" onClick={() => handleCategoryChange('Event Planner')}>Event Planner</button>
           {/* Add more category buttons as needed */}
-          <button><img src={search} alt="" /></button>
+          <button className="btn-link"><img src={search} alt="" /></button>
         </div>
 
         <div className="card">

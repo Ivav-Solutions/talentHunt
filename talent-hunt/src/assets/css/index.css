@@ -76,6 +76,7 @@ p {
 .nav-right {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 /* Style the "Get Started" button */
@@ -207,6 +208,8 @@ p {
   }
 }
 
+
+
 .talents {
   padding: 80px 10% 90px 10%;
 }
@@ -230,7 +233,18 @@ p {
   margin-bottom: 34px;
 }
 
-.talent-link button {
+/* .buttonLink {
+  font-size: 15px;
+  background-color: #0135c7;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: -1.1rem;
+  border-radius: 100px;
+
+} */
+
+.buttonLink {
   font-size: 15px;
   background-color: #0135c7;
   color: white;
@@ -240,6 +254,14 @@ p {
   margin-top: -1.1rem;
   border-radius: 100px;
 }
+
+.btn-link {
+  border: none;
+  color: black;
+  background-color: white;
+}
+
+
 
 .talents-link {
   display: flex;
@@ -661,3 +683,318 @@ p {
     margin-right: 180px;
   }
 }
+
+/* style for the profile container  */
+.profile-container {
+  background: #0135c7;
+  height: 20rem;
+}
+
+.profile-text {
+  margin: 2rem auto auto auto;
+  text-align: center;
+  max-width: 600px;
+  color: #fff;
+}
+
+.profile-text h1 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+ 
+/* style for the profile bio */
+.profile-cards {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.profile-bio {
+  padding: 50px 5% 60px 5%;
+}
+
+/* style for the line */ 
+
+
+/* style for profile info */
+
+.profile-info p {
+  font-size: 16px;
+  color: #666;
+  line-height: normal;
+  width: 300px;
+ 
+}
+
+.profile-intro {
+  display: flex;
+  gap: 100px;
+}
+
+/* styling the profile-pricing container */
+.grid-container {
+  display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+   /* Add a gap between grid items */
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.grid-item3 {
+  margin-left: 100px;
+}
+
+.profile-services {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-pricing {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
+  /* width: 248px; */
+  padding: 20px 20px 11px 20px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+/* styling the hashlink */
+.profile-hashlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+
+/* styling the image contain of the highlight container */
+.image-contain {
+  position: relative;
+}
+
+.background-img {
+  object-fit: cover;
+  width: 100px;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 5%;
+  /* left: 10%; */
+  right: 1%;
+  transform: translate(-50%, -50%); /* Center the overlay image */
+  z-index: 1;
+}
+
+.artist-img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.star-img {
+  display: flex;
+  align-items: center;
+}
+
+.highlight-intro p {
+  font-size: 16px;
+}
+
+.highlight-intro {
+  max-width: 600px;
+  margin-left: 30px;
+}
+
+.star-intro h1 {
+  font-size: 18px;
+}
+
+.star-intro p {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.star-img p {
+  font-size: 10px;
+}
+
+.star-intro {
+  flex-direction: column;
+}
+
+.profile-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.link-icon {
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: blue;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* styling the highlight container  */
+.highlight-container {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 670px;
+  /* width: 670px; */
+  height: 750px;
+
+}
+
+.description-container {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 670px;
+  /* width: 670px; */
+  height: 570px;
+
+
+}
+
+.available-container {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 670px;
+  /* width: 670px; */
+  height: 570px;
+
+}
+
+.Reviews-container {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 670px;
+  /* width: 670px; */
+  height: 790px;
+
+}
+
+
+/* styling the reviews */
+.star-icon {
+  font-size: 20px;
+  color: #FFB800;
+}
+
+.reviews-icon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.star {
+  display: flex;
+  margin-left: 250px;
+  
+}
+
+.reviews-container {
+  display: flex;
+}
+
+.review-button {
+  border: 1px solid black;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+  margin-top: 20px;
+
+}
+
+/* styling the availabe container */
+.rectangle1 {
+  width: 30px;
+  height: 30px;
+  background:  #D9D9D9;
+  display: flex;
+  align-items: center;
+  
+}
+
+.rectangle2 {
+  width: 30px;
+  height: 30px;
+  background: #FFB800;
+  display: flex;
+  align-items: center;
+
+}
+
+.rectangle3 {
+  width: 30px;
+  height: 30px;
+  background: #06A733;
+  display: flex;
+  align-items: center;
+
+}
+
+.rectangle4 {
+  width: 30px;
+  height: 30px;
+  background: #EFECEC;
+  display: flex;
+  align-items: center;
+  
+}
+
+.rectangle1 p {
+  margin-left: 35px;
+}
+
+.rectangle2 p {
+  margin-left: 35px;
+}
+
+.rectangle3 p {
+  margin-left: 35px;
+}
+
+.rectangle4 p {
+  margin-left: 35px;
+}
+
+.rectangle-cards {
+  display: flex;
+  gap: 120px;
+}
+
+/* styling the calendar */
+
+

@@ -9,6 +9,7 @@ import Verification from './components/auth/verification';
 import ResetPassword from './components/auth/reset-password';
 import Profile from './components/dashboard/Profile';
 import Hunters from './components/frontend2/Hunters';
+import Account from './components/settingPage/Account';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/hunters" element={<Hunters />} />
+          <Route path="/account" element={<Account />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

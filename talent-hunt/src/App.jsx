@@ -10,6 +10,8 @@ import ResetPassword from './components/auth/reset-password';
 import Profile from './components/dashboard/Profile';
 import Hunters from './components/frontend2/Hunters';
 import Account from './components/settingPage/Account';
+import Bookings from './components/settingPage/Bookings';
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/hunters" element={<Hunters />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/bookings" element={<Bookings />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

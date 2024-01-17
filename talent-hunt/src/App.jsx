@@ -14,6 +14,7 @@ import Bookings from './components/settingPage/Bookings';
 
 
 function App() {
+  const routePrefix = '/dashboard'; // Change 'app' to your desired prefix
   return (
     <Router>
       <div>
@@ -24,10 +25,10 @@ function App() {
           <Route path="/verification" element={<Verification />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/hunters" element={<Hunters />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/bookings" element={<Bookings />} />
+          <Route path={`${routePrefix}/profile`} element={<Profile />} />
+          <Route path={`${routePrefix}/hunters`} element={<Hunters />} />
+          <Route path={`${routePrefix}/account`} element={<Account />} />
+          <Route path={`${routePrefix}/bookings`} element={<Bookings />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

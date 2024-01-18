@@ -9,8 +9,8 @@ import Verification from './components/auth/verification';
 import ResetPassword from './components/auth/reset-password';
 import Profile from './components/dashboard/Profile';
 import Hunters from './components/frontend2/Hunters';
-import Account from './components/settingPage/Account';
-import Bookings from './components/settingPage/Bookings';
+import Account from './components/dashboard/settingPage/Account';
+import Bookings from './components/dashboard/settingPage/Bookings';
 
 
 function App() {
@@ -25,10 +25,10 @@ function App() {
           <Route path="/verification" element={<Verification />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path={`${routePrefix}/profile`} element={<Profile />} />
+          <Route path={`${routePrefix}/settings/profile`} element={<Profile />} />
           <Route path={`${routePrefix}/hunters`} element={<Hunters />} />
-          <Route path={`${routePrefix}/account`} element={<Account />} />
-          <Route path={`${routePrefix}/bookings`} element={<Bookings />} />
+          <Route path={`${routePrefix}/settings/account`} element={<Account />} />
+          <Route path={`${routePrefix}/settings/bookings`} element={<Bookings />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

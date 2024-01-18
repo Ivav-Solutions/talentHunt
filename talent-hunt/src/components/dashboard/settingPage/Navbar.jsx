@@ -1,9 +1,9 @@
 import React from 'react'
-import blueivav from '../../assets/images/blueivav.png'
+import blueivav from '../../../assets/images/blueivav.png'
 import { HashLink } from 'react-router-hash-link'
-import blackbell from '../../assets/images/blackbell.png'
-import eclipse from '../../assets/images/eclipse.png'
-import "../../assets/css/index.css";
+import blackbell from '../../../assets/images/blackbell.png'
+import eclipse from '../../../assets/images/eclipse.png'
+import "../../../assets/css/index.css";
 
 const Navbar = () => {
   return (

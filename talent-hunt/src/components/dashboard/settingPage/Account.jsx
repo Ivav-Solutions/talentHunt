@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Navbar from '../settingPage/Navbar'
-import eclipse from '../../assets/images/eclipse.png'
-import Footer from '../frontend/Footer'
+import Navbar from './Navbar'
+import eclipse from '../../../assets/images/eclipse.png'
+import Footer from '../../frontend/Footer'
 
 const Account = () => {
   const [activeButton, setActiveButton] = useState('AccountInfo');

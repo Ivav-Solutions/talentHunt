@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../settingPage/Navbar'
+import Navbar from './Navbar'
 // import music from '../../assets/images/music.png'
-import musiclet from '../../assets/images/musiclet.png'
+import musiclet from '../../../assets/images/musiclet.png'
 import { FaArrowCircleRight } from "react-icons/fa";
-import faith from '../../assets/images/faith.png'
-import stone from '../../assets/images/stone.png'
-import Footer from '../frontend/Footer';
+import faith from '../../../assets/images/faith.png'
+import stone from '../../../assets/images/stone.png'
+import Footer from '../../frontend/Footer';
 
 const Bookings = () => {
   return (

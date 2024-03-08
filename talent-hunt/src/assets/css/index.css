@@ -1256,6 +1256,69 @@ form input, form textarea {
   background-color: white;
 }
 
+/* styling the offer bio */
+.offer-bio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.offer-bio h1 {
+  font-size: 18px;
+}
+
+.offer-bio p {
+  font-size: 16px;
+}
+
+.offer-card {
+  width: 300px;
+  height: 320px;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.offers-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acc-btn {
+  padding: 10px;
+  width: 127px;
+  color: #0135C7;
+  border: 1px solid #0135C7;
+  background-color: white;
+
+}
+
+.rej-btn {
+  padding: 10px;
+  width: 127px;
+  background-color:#EA4335;
+  color: white;
+  border: 1px solid #EA4335;
+  
+}
+
+.offer-card h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.offer-card p {
+  font-size: 18px;
+}
+
+.offers-cards {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+
 
 
 

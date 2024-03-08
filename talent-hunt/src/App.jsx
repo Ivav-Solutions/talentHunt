@@ -11,6 +11,7 @@ import Profile from './components/dashboard/Profile';
 import Hunters from './components/frontend2/Hunters';
 import Account from './components/dashboard/settingPage/Account';
 import Bookings from './components/dashboard/settingPage/Bookings';
+import Offers from './components/dashboard/settingPage/Offers';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path={`${routePrefix}/hunters`} element={<Hunters />} />
           <Route path={`${routePrefix}/settings/account`} element={<Account />} />
           <Route path={`${routePrefix}/settings/bookings`} element={<Bookings />} />
+          <Route path={`${routePrefix}/settings/offers`} element={<Offers />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

@@ -12,6 +12,7 @@ import Hunters from './components/frontend2/Hunters';
 import Account from './components/dashboard/settingPage/Account';
 import Bookings from './components/dashboard/settingPage/Bookings';
 import Offers from './components/dashboard/settingPage/Offers';
+import Bookking from './components/dashboard/settingPage/Bookking';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path={`${routePrefix}/settings/account`} element={<Account />} />
           <Route path={`${routePrefix}/settings/bookings`} element={<Bookings />} />
           <Route path={`${routePrefix}/settings/offers`} element={<Offers />} />
+          <Route path={`${routePrefix}/settings/bookking`} element={<Bookking />} />
           {/* Other routes */}
         </Routes>
         <div className="App_container">

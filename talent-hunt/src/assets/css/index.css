@@ -1273,7 +1273,7 @@ form input, form textarea {
 
 .offer-card {
   width: 300px;
-  height: 320px;
+  height: 340px;
   padding: 15px;
   border: 1px solid black;
 }
@@ -1317,6 +1317,14 @@ form input, form textarea {
   gap: 40px;
   margin-left: 80px;
   margin-bottom: 80px;
+}
+
+.rejd-btn {
+  width: 273px;
+  padding: 10px;
+  background-color:#EA4335;
+  color: white;
+  border: 1px solid #EA4335;
 }
 
 

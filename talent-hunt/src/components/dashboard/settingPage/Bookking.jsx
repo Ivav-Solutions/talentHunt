@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
-// import music from '../../../assets/images/music.png'
 import smallmusic from '../../../assets/images/smallmusic.png'
 import Footer from '../../frontend/Footer'
 
-const Offers = () => {
+const Bookking = () => {
   return (
     <div>
-        <Navbar /> 
+       <Navbar /> 
         <hr />
         <div>
            <div className="account-btn">
@@ -39,9 +38,8 @@ const Offers = () => {
                        for me to able to come and perform at your event.
                    </p>
                    <p>Thank you.</p>
-                   <div className="offers-btn">
-                      <button className="acc-btn">Accept</button>
-                      <button className="rej-btn">Reject</button>
+                   <div>
+                      <button className="rejd-btn">Reject</button>
                    </div>
                 </div>
 
@@ -90,4 +88,4 @@ const Offers = () => {
   )
 }
 
-export default Offers
+export default Bookking

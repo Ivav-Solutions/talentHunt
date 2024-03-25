@@ -20,19 +20,20 @@ const ResetPassword = () => {
 
         <div className="authRight">
             {/* Your reset password goes here */}
-            <form>
+            <form className='verify-form'>
                 <h2>IVAV TALENTS</h2>
                 <p>Forgot Password</p>
                 <p>Please type in the email address linked to your Ivav Talents account to reset your password.</p>
                 <div className="input-container">
                     <TfiEmail className="icon" />
                     <input type="email" placeholder="Email Address" />
-                </div>
-                <button>Reset</button>
-            </form>
-            <p>
+                </div> <br />
+                <button id='signin'>Reset</button>
+                 <p>
                 Remember Password? <Link to="/login">Login here</Link>
             </p>
+            </form>
+           
         </div>
 
     </div>

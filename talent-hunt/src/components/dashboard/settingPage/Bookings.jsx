@@ -38,15 +38,15 @@ const Bookings = () => {
                        </div>
                        <div className="history-Info">
                          <h3>Booking Code</h3>
-                         <p>#900-343-2334</p>
+                       <p style={{ fontSize:'14px'}}>#900-343-2334</p>
                        </div>
                        <div className="history-Info">
                          <h3>Date</h3>
-                         <p>Jan 20 - 22</p>
+                       <p style={{ fontSize: '14px' }}>Jan 20 - 22</p>
                        </div>
                        <div className="history-Info">
                          <h3>Time</h3>
-                         <p>05:40 PM</p>
+                         <p style={{ fontSize: '14px' }}>05:40 PM</p>
                        </div>
                        <div className="history-Info">
                          <h3>Status</h3>
@@ -73,15 +73,15 @@ const Bookings = () => {
                       </div>
                       <div className="history-Info">
                          <h3>Booking Code</h3>
-                         <p>#100-543-1994</p>
+                       <p style={{ fontSize: '14px' }}>#100-543-1994</p>
                       </div>
                       <div className="history-Info">
                          <h3>Date</h3>
-                         <p>June 06 - 08</p>
+                         <p style={{ fontSize: '14px' }}>June 06 - 08</p>
                       </div>
                       <div className="history-Info">
                          <h3>Time</h3>
-                         <p>10:40 AM</p>
+                         <p style={{ fontSize: '14px' }}>10:40 AM</p>
                       </div>
                       <div className="history-Info">
                          <h3>Status</h3>
@@ -108,15 +108,15 @@ const Bookings = () => {
                       </div>
                       <div className="history-Info">
                          <h3>Booking Code</h3>
-                         <p>#900-343-2334</p>
+                       <p style={{ fontSize: '14px' }}>#900-343-2334</p>
                       </div>
                       <div className="history-Info">
                          <h3>Date</h3>
-                         <p>June 06 - 08</p>
+                         <p style={{ fontSize: '14px' }}>June 06 - 08</p>
                       </div>
                       <div className="history-Info">
                          <h3>Time</h3>
-                         <p>12:00 PM</p>
+                         <p style={{ fontSize: '14px' }}>12:00 PM</p>
                       </div>
                       <div className="history-Info">
                          <h3>Status</h3>

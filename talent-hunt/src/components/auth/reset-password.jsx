@@ -11,9 +11,9 @@ const ChangePassword = () => {
         </div>
         <div className="authRight">
             {/* Your change password goes here */}
-            <form>
+            <form className='verify-form'>
                 <h2>IVAV TALENTS</h2>
-                <p>To complete the reset password process, Please enter the code sent to the email address</p>
+                <p style={{fontSize:'14px'}}>To complete the reset password process, Please enter the code sent to the email address</p>
                 <div className="password-container">
                     <RiLock2Line className="icon" />
                     <input type="text" placeholder="Code" name="code"/>
@@ -31,7 +31,7 @@ const ChangePassword = () => {
                     <input type="password" placeholder="Comfirm New Password" />
                     <MdOutlineRemoveRedEye className="eye-icon" />
                 </div>
-                <button>Reset Password</button>
+                <button id='signin'>Reset Password</button>
             </form>
 
         </div>

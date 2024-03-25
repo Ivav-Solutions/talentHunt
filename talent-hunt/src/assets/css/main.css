@@ -1,10 +1,12 @@
 /* Register */
+
 body,
 html {
   font-family: Poppins;
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: white;
   font-style: normal;
   line-height: normal;
   font-family: "Poppins", sans-serif;
@@ -45,10 +47,12 @@ html {
   flex: 4; /* 40% */
   display: flex;
   flex-direction: column;
+  background-color: white;
+  box-shadow: 0;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  overflow: hidden; /* Hide overflow to prevent scrolling */
+  padding: 20px;
+  overflow: hidden; 
 }
 
 .authRight form {
@@ -57,6 +61,7 @@ html {
   max-width: 100%; /* Set a max-width for better readability on larger screens */
   margin: 0 auto; /* Center the form horizontally */
   width: 50%;
+  padding: 20px;
 }
 
 .authRight form a {
@@ -67,15 +72,14 @@ html {
 .authRight h2 {
   font-size: 40px;
   font-weight: 900;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 .authRight p {
-  margin-top: 1rem;
+  color: gray;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -83,23 +87,30 @@ html {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom:5px;
 }
 
 .authRight .input-container .icon,
 .authRight .password-container .icon {
   position: absolute;
   left: 8px;
+  color: grey;
   top: 60%;
   transform: translateY(-50%);
 }
 
 .authRight input {
   flex: 1;
-  padding: 8px 8px 8px 28px;
+  padding: 12px 12px 12px 30px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
   background: #e7e7e7;
+}
+
+.verify-form{
+  height:100vh;
+  justify-content: center;
 }
 
 .authRight label {
@@ -107,29 +118,59 @@ html {
   margin-top: 8px;
 }
 
-.input-box {
+.verify-form  .input-box {
   display: flex;
-  gap: 5px;
+  gap: 8px;
+  justify-content: center;
+}
+
+#resend{
+  color: blue;
 }
 
 .input__box {
   border: 1px solid black;
-  width: 25px;
-  height: 35px;
+  width:35px;
+  height: 40px;
+  color: black;
+}
+
+ .input__box:focus{
+  border: none;
+  outline: none;
+  color: black;
 }
 
 .input-container .label {
   margin-right: 8px;
 }
+.Signin-cont .icon{
+  font-size: 18px;
+ 
+}
 
 .authRight button {
   background-color: #4caf50;
   color: white;
+  margin-top: 15px;
+  margin-bottom: 13px;
   padding: 10px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 10px;
+  font-size: 14px;
+  border-radius: 7px;
+  background: #255aeb;
+}
+.authRight #signin {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  padding: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 7px;
   background: #255aeb;
 }
 
@@ -153,15 +194,25 @@ html {
 
 .password-container input {
   flex: 1;
-  padding: 8px 8px 8px 28px;
+  padding: 12px 12px 12px 30px;
   font-size: 16px;
+}
+
+.input-container input:focus{
+  outline:none;
+}
+
+.password-container input:focus{
+  outline:none;
 }
 
 .password-container .eye-icon {
   position: absolute;
   right: 10px; /* Adjust the right position as needed */
   cursor: pointer;
-  top: 25%;
+  top: 50%;
+  font-size: 22px;
+  color: gray;
 }
 
 /* Additional styling for the eye icon, for example, change color on hover */
@@ -171,18 +222,69 @@ html {
 
 .checkbox-container {
   display: flex;
+  margin: 2px 0;
   align-items: center;
 }
 
-.checkbox-container label {
-  flex: 1;
+.checkbox-container-Login {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
+
+.checkbox-container-Login .check-me{
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.checkbox-container-Login .check-me span{
+  margin-top:13px;
+  margin-left: 7px;
+}
+
+.input-container input[type= 'date']::placeholder{
+  color: gray;
+}
+
+.forgot-Psw{
+  margin-top: 13px;
+}
+
+.checkbox-container-Login .check-me input[type= 'checkbox']{
+  height:20px;
+  width: 27px;
+  padding: 0px;
+  border: none;
+}
+.checkbox-container input[type= 'checkbox']{
+  height:20px;
+  padding: 0 5px;
+  border: none;
+}
+
+.checkbox-container label{
+  width: 92%;
+  margin-top: 22px ;
+}
+
+.checkbox-container label span{
+  color: blue;
+  font-weight: 500;
+}
+
+.para-account p{
   font-size: 14px;
-  margin-left: 8px;
-  margin-bottom: 16px;
+}
+
+#account-check{
+  font-size: 15px;
 }
 
 .checkbox-container input {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 @media (max-width: 891px) {

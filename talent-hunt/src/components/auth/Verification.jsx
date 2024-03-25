@@ -18,31 +18,31 @@ const Verification = () => {
 
         <div className="authRight">
             {/* Your verification form goes here */}
-            <form>
+            <form className='verify-form'>
                 <h2>IVAV TALENTS</h2>
                 <p>Verify your email address</p>
-                <p>Enter the code sent to your email address</p>
+                <p>Enter the code we just sent to your email address</p>
                 <div className="input-box">
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                     <div>
-                        <input type="number" className="input__box" />
+                        <input type="tel" className="input__box" />
                     </div>
                 </div>
-                <p>Resend({seconds}s)</p>
+                <p>Resend <strong id='resend'>({seconds}s)</strong> </p>
                 {seconds === 0 && <p>Time's up!</p>}
             </form>
 

@@ -17,37 +17,39 @@ const Login = () => {
       </div>
       <div className="authRight">
         {/* Your signup form goes here */}
-        <form>
+        <form className="verify-form">
           <Link to="/">
             <h2>IVAV TALENTS</h2>
           </Link>
-          <p>Create an Account</p>
-          <div className="input-container">
+          <p>Login into Your Account</p>
+          <div className="input-container Signin-cont">
             <TfiEmail className="icon" />
             <input type="email" placeholder="Email Address" />
           </div>
 
-          <div className="password-container">
+          <div className="password-container Signin-cont">
             <RiLock2Line className="icon" />
             <input type="password" placeholder="Password" />
             <MdOutlineRemoveRedEye className="eye-icon" />
           </div>
 
-          <div className="checkbox-container">
-            <label>
+          <div className="checkbox-container-Login">
+            <div className="check-me">
               <input
                 type="checkbox"
                 checked={isChecked}
                 onChange={handleCheckboxChange}
               />
-              Remember me
-            </label>
-            <p>
+              <span>Remember me</span>
+            </div>
+            <div className="forgot-Psw">
+                 <p>
               <Link to="/forgot-password">Forgot Password?</Link>
             </p>
+            </div>
           </div>
-          <button>Login</button>
-          <p>
+          <button id="signin">Login</button>
+          <p id="account-check">
             Do you have an account? <Link to="/register">Register here</Link>
           </p>
         </form>

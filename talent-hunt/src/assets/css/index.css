@@ -520,7 +520,7 @@ p {
 .contact-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -529,7 +529,7 @@ p {
   flex: 5;
   background-color: #fff;
   /* padding: 40px; */
-  padding-right: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 2px 20px 30px 0px rgba(51, 51, 51, 0.1);
 }
@@ -1059,12 +1059,19 @@ hr {
 /* styling the account btn */
 .account-btn {
   display: flex;
-  gap: 150px;
+  justify-content: start;
+  gap: 70px;
   align-items: center;
-  margin-top: 38px;
-  margin-left: 80px;
-  
-  
+  margin: 25px 70px;
+
+}
+
+button{
+  border: none;
+}
+
+.account-btn button{
+  font-size: 15px;
 }
 
 /* styling the account form */
@@ -1134,15 +1141,18 @@ form input, form textarea {
 /* styling the booking btn */
 .bookings-btn {
   display: flex;
-  border: 1px solid #0135C7;
+  border: 2px solid #c0c3cc;
   border-radius: 10px;
-  width: 240px;
-  padding: 4px;
-  margin-bottom: 20px;
+  width: 250px;
+  padding: 2px;
+  margin-bottom: 35px;
 }
+
 
 .books-btn {
   padding: 11.5px 38px;
+  color: white;
+  border: none;
   background: #0135C7;
   border-radius: 5px;
 }
@@ -1157,15 +1167,12 @@ form input, form textarea {
 
 /* styling the booking history */
 .bookings-history {
-  /* display: inline-flex; */
-  /* gap: 30px; */
-  /* align-items: center; */
-  border: 1px solid rgba(0, 0, 0, 0.20);
+  /* border: 0.5px solid rgba(0, 0, 0, 0.20); */
   border-radius: 20px;
   background: #FFF;
   box-shadow: 0px 0px 20px 1px rgba(51, 51, 51, 0.10);
   padding: 9px 40px;
-  margin-bottom: 20px;
+  margin-bottom:3rem;
   width: 1090px;
 
 }
@@ -1176,39 +1183,39 @@ form input, form textarea {
   gap: 30px;
 }
 
-.status-btn {
-  border-radius: 50px;
+.history-Info .status-btn {
+  border-radius: 3px;
   background: #28832B;
   width: 100px;
-  padding: 15px;
-  font-size: 16px;
+  padding: 7px 20px;
+  font-size: 14px;
   color: white;
 }
 
 .req-btn {
-  border-radius: 50px;
+  border-radius:5px;
   background:  #DBA10E;
   width: 130px;
-  padding: 15px;
-  font-size: 16px;
+  padding:8px 20px;
+  font-size: 14px;
   color: white;
 }
 
 .blue-btn {
-  border-radius: 50px;
+  border-radius:5px;
   background: #0135C7;
-  width: 130px;
-  padding: 15px;
-  font-size: 15px;
+   width: 130px;
+   padding:8px 20px;
+  font-size: 14px;
   color: white;
 }
 
 .red-btn {
-  border-radius: 50px;
+  border-radius:5px;
   background: #EA4335;
   width: 130px;
-  padding: 15px;
-  font-size: 16px;
+  padding:8px 20px;
+  font-size: 14px;
   color: white;
 }
 
@@ -1218,7 +1225,7 @@ form input, form textarea {
 }
 
 .history-info p {
-  font-size: 16px;
+  font-size: 15px;
   color: #5E5E5E;
 }
 
@@ -1237,7 +1244,12 @@ form input, form textarea {
 .booking-logo {
   width: 35px;
   height: 35px;
+  padding: 10px;
   color: #0135C7;
+}
+
+hr{
+  border: 1.5px solid whitesmoke;
 }
 
 .bookings-info {
@@ -1247,6 +1259,8 @@ form input, form textarea {
 .buttonsLink {
   padding: 11.5px 38px;
   background: #0135C7;
+  color: white;
+  border: none;
   border-radius: 5px;
 }
 

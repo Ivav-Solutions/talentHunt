@@ -23,7 +23,7 @@ const Register = () => {
         {/* Your signup form goes here */}
         <form>
           <Link to="/">
-          <h2>IVAV TALENTS</h2>
+             <h2>IVAV TALENTS</h2>
           </Link>
           <p>Create an Account</p>
           <div className="input-container">
@@ -47,21 +47,23 @@ const Register = () => {
             <MdOutlineRemoveRedEye className="eye-icon" />
           </div>
 
-          <div className="checkbox-container">
-            <label>
-              <input
+          <section className="checkbox-container">
+                  <input
                 type="checkbox"
                 checked={isChecked}
                 onChange={handleCheckboxChange}
               />
-              By clicking Create account, I agree that I have read and accepted
-              the Terms of Use and Privacy Policy.
+            <label>
+                By clicking Create account, I agree that I have read and accepted
+                the <span> Terms of Use</span> and <span>Privacy Policy</span>.
             </label>
-          </div>
-          <button>Create account</button>
+          </section>
+          <button> <strong>Create Account</strong></button>
+          <div className="para-account">
           <p>
             Already have an account? <Link to="/login">Sign in</Link>
           </p>
+          </div>
         </form>
       </div>
     </div>
